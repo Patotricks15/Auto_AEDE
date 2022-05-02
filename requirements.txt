@@ -54,8 +54,6 @@ defusedxml==0.6.0
 deprecation==2.1.0
 descartes==1.1.0
 dill==0.3.2
-distro==1.4.0
-distro-info===0.23ubuntu1
 dnspython==1.16.0
 docker==5.0.3
 docutils==0.16
