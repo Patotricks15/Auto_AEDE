@@ -6,8 +6,13 @@ Análise Exploratória de Dados Espaciais de maneira automatizada.
 * Autocorrelação espacial global
 * Autocorrelação espacial local
 
-
-## Matrizes de ponderação espacial
 ## Mapa de vizinhanças
+
+![alt text](https://github.com/Patotricks15/Auto_AEDE/blob/main/img1.png)
+
 ## Autocorrelação espacial global
+
+![alt text](https://github.com/Patotricks15/Auto_AEDE/blob/main/img3.png)
+
 ## Autocorrelação espacial local
+![alt text](https://github.com/Patotricks15/Auto_AEDE/blob/main/img4.png)
