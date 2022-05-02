@@ -37,7 +37,6 @@ clickclick==20.10.2
 cligj==0.7.2
 cloudpickle==2.0.0
 colorama==0.4.3
-command-not-found==0.3
 commonmark==0.9.1
 configobj==5.0.6
 configparser==3.5.3
