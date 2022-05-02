@@ -35,7 +35,6 @@ click==8.0.4
 click-plugins==1.1.1
 clickclick==20.10.2
 cligj==0.7.2
-cloud-init==21.2
 cloudpickle==2.0.0
 colorama==0.4.3
 colorlog==4.0.2
