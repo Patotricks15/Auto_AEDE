@@ -1,3 +1,4 @@
+scikit-learn
 numpy==1.21.0
 cffi==1.15.1
 pandas
@@ -13,7 +14,6 @@ seaborn
 pysal
 contextily
 openpyxl
-scikit-learn
 splot
 plotly
 mapclassify
