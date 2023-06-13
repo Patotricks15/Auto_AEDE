@@ -20,11 +20,11 @@ def read_geodata(dados):
     # estados = geobr.read_state(year=2017)
     # estado = geobr.read_municipality(code_muni='RJ', year=2020)
     print(str(dados).split('.')[-1])
-    if str(dados).split('.')[-1] == 'csv':
-        df = pd.read_csv(dados)
+    if str(dados).split('.')[-1] == 'xlsx':
+        df = pd.read_excel(dados)
         df['geometry'] = df['geometry'].apply(wkt.loads)
-    elif str(dados).split('.')[-1] == 'parquet':
-        df = pd.read_parquet(dados)
+    elif str(dados).split('.')[-1] == 'csv':
+        df = pd.read_csv(dados)
         df['geometry'] = df['geometry'].apply(wkt.loads)
     else:
         pass
