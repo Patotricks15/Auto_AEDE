@@ -23,9 +23,11 @@ def read_geodata(dados):
     if str(dados).split('.')[-1] == 'xlsx':
         df = pd.read_excel(dados)
         df['geometry'] = df['geometry'].apply(wkt.loads)
+        gdf = gpd.GeoDataFrame(df, crs='epsg:4326')
     elif str(dados).split('.')[-1] == 'csv':
         df = pd.read_csv(dados)
         df['geometry'] = df['geometry'].apply(wkt.loads)
+        gdf = gpd.GeoDataFrame(df, crs='epsg:4326')
     else:
         pass
     #df = gpd.GeoDataFrame(df, geometry='geometry')
