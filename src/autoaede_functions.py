@@ -19,6 +19,7 @@ from splot import esda as esdaplot
 def read_geodata(dados):
     # estados = geobr.read_state(year=2017)
     # estado = geobr.read_municipality(code_muni='RJ', year=2020)
+    print(str(dados).split('.')[-1])
     if str(dados).split('.')[-1] == 'csv':
         df = pd.read_csv(dados)
         df['geometry'] = df['geometry'].apply(wkt.loads)
