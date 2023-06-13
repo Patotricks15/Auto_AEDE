@@ -24,10 +24,10 @@ def read_geodata(dados):
         df['geometry'] = df['geometry'].apply(wkt.loads)
     elif str(dados).split('.')[-1] == 'parquet':
         df = pd.read_parquet(dados)
+        df['geometry'] = df['geometry'].apply(wkt.loads)
     else:
         pass
     #df = gpd.GeoDataFrame(df, geometry='geometry')
-    df['geometry'] = df['geometry'].apply(wkt.loads)
     gdf = gpd.GeoDataFrame(df, crs='epsg:4326')
 
 
