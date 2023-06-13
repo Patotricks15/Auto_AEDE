@@ -19,7 +19,10 @@ from splot import esda as esdaplot
 def read_geodata(dados):
     # estados = geobr.read_state(year=2017)
     # estado = geobr.read_municipality(code_muni='RJ', year=2020)
-    df = pd.read_csv(dados)
+    if dados.split('.')[-1] == 'csv':
+        df = pd.read_csv(dados)
+    elif dados.split('.')[-1] == 'parquet':
+        df = pd.read_parquet(dados)
     #df = gpd.GeoDataFrame(df, geometry='geometry')
     df['geometry'] = df['geometry'].apply(wkt.loads)
     gdf = gpd.GeoDataFrame(df, crs='epsg:4326')
